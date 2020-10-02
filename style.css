@@ -1,0 +1,115 @@
+#header {
+	padding: 1em;
+	text-align: center;
+	background: darkblue;
+	color: white;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#header h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#optionen {
+	margin: 30px;
+}
+
+#spielfeld {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+	margin: 20px 50px 20px 30px;
+	width: max-content;
+}
+
+#spielfeld .senso {
+	height: 200px;
+	width: 200px;
+}
+
+#spielfeld #senso1 svg {
+	fill: #008;
+}
+
+#spielfeld #senso1.active svg {
+	filter: drop-shadow(0px 0px 15px #00f);
+	fill: #00f;
+}
+
+#spielfeld #senso2 svg {
+	fill: #800;
+}
+
+#spielfeld #senso2.active svg {
+	filter: drop-shadow(0px 0px 15px #f00);
+	fill: #f00;
+}
+
+#spielfeld #senso3 svg {
+	fill: #060;
+}
+
+#spielfeld #senso3.active svg {
+	filter: drop-shadow(0px 0px 15px #0f0);
+	fill: #0f0;
+}
+
+#spielfeld #senso4 svg {
+	fill: #990;
+}
+
+#spielfeld #senso4.active svg {
+	filter: drop-shadow(0px 0px 15px #ff0);
+	fill: #ff0;
+}
+
+#spielfeldwrapper {
+	display: grid;
+	grid-template-columns: max-content max-content;
+}
+
+#status {
+	margin: 50px;
+}
+
+#status #punkte {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#status #zug {
+  font-size: 2rem;
+  min-width: 300px;
+  text-align: center;
+  padding: 20px;
+}
+
+#status #zug.verloren {
+  background-color: #d00;
+  color: white;
+}
+
+#status #zug.zugPlayer {
+  background-color: #0a0;
+}
+
+#status #zug.zugSenso {
+  background-color: #880;
+}
+
+#status div {
+	margin: 50px;
+}
+
+#tools {
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+body {
+	margin: 0;
+}
+
+
